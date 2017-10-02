@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2962FF">
+  <title>eTIN-Calc</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>calc <a href="https://de.wikipedia.org/wiki/ETIN" title="Was ist eTIN?">eTIN</a>
+       coded by <a href="https://the-morpheus.de/forum/member.php?action=profile&uid=91">Richie</a>
+       designed by <a href="https://the-morpheus.de/forum/member.php?action=profile&uid=371">Agreborig</a></h1>
+      <p class="">Diese Website berechnet den eTIN aus Namen und Geburtsdatum.</p>
+    </header>
+    <form>
+
+      <div class="f_subname ">
+        <label for="lastname">Nachname:</label>
+        <input id="lastname" type="text">
+      </div>
+
+      <div class="f_name">
+        <label for="name">Vorname:</label>
+        <input id="name" type="text">
+      </div>
+
+      <div class="f_bday">
+        <label for="bday"> Geburtsdatum: </label>
+        <input id="bday" type="date">
+      </div>
+
+      <input class="button btn_raised " type="submit" value="eTIN" onclick="calc_eTIN(); return false;">
+      <input class="button btn_flat " type="reset" onclick="document.getElementById('output').innerHTML=''">
+
+      <p id="output"></p>
+    </form>
+  </main>
+</body>
+
+</html>
