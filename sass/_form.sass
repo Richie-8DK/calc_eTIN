@@ -1,0 +1,95 @@
+form
+  position: relative
+  display: flex
+  flex-flow: wrap
+  background: $light-gray
+  background: linear-gradient($light-gray ,$primary-light)
+  padding: 1em
+
+label
+  display: inline-block
+  color: rgba(0,0,0,.87)
+  width: 100%
+
+input
+  border: 0px solid
+  outline: none
+  width: 100%
+
+.form-group
+  box-sizing: border-box
+  position: relative
+  padding: 1em .5em 1em 1em
+  border: 1px solid $gray
+  width: $is-6
+  order: 0
+
+.f_name
+  @extend .form-group
+
+.f_bday
+  @extend .form-group
+  border-top: 0px
+  order: 1
+
+.f_subname
+  @extend .form-group
+  border-bottom: 0px
+
+.button
+  padding: 0 1em
+  margin-top: 1em
+  margin-right: .5em
+  border-radius: 4px
+  line-height: 2.25em
+  width: auto
+  order: 2
+
+  &:hover
+    cursor: pointer
+
+.btn_raised
+  background: $secondary
+  box-shadow: 3px 3px 8px rgba(0,0,0,.56)
+  color: white
+  transition: all .1618s ease-in
+
+  &:hover
+    box-shadow: 5px 5px 16px rgba(0,0,0,.56)
+
+.btn_flat
+  color: $secondary-dark
+
+#output
+  margin-top: 1em
+  width: 100%
+  height: 1.6em
+  order: 3
+
+  &.false
+    color: #F44336
+
+@media screen and (min-width: $small)
+
+  .f_bday
+    border-top: 1px solid $gray
+    width: $is-3
+    order: 0
+
+  .f_name
+    border-right: 0px
+    width: $is-3
+
+  .f_subname
+    width: $is-6
+
+@media screen and (min-width: $medium)
+
+  form
+    padding: 2em
+
+  .f_bday
+    width: $is-2
+
+  .f_name
+    width: $is-4
