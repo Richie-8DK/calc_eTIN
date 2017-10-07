@@ -1,0 +1,67 @@
+$primary: #C1C9E8
+$primary-light: #F4FCFF
+$primary-dark: #9098B6
+
+$secondary: #2962FF
+$secondary-light: #768FFF
+$secondary-dark: #0039CB
+
+$light-gray: #f5f5f6
+$dark-gray: #dcdcdc
+$gray: #95989A
+
+// breakpoints:
+$small: 22em
+$medium: 41em
+
+// little "grid"
+$is-1: (100/6) * 1 + %
+$is-2: (100/6) * 2 + %
+$is-3: (100/6) * 3 + %
+$is-4: (100/6) * 4 + %
+$is-5: (100/6) * 5 + %
+$is-6: (100/6) * 6 + %
+
+// little reset
+div, body, html, form, table, input, label, h1, p
+  padding: 0
+  margin: 0
+
+// set font
+h1, a, p, input, label
+  font: 1em Roboto
+  line-height: 1.6em
+  background: transparent
+
+body
+  background-color: $primary-light
+  min-width: 16em
+
+main
+  margin: auto
+  background: $primary-light
+  max-width: 40em
+
+header
+  background-color: $primary
+  // padding top needed for
+  // https://the-morpheus.de/Tools/eTIN/index.php
+  padding: 4em 1em 1em
+
+h1
+  font-size: 1.6em
+  padding-bottom: 1rem
+  & a:link, a:visited
+    color: $secondary-dark
+
+
+@media screen and (min-width: $medium)
+  body
+    background-color: transparent
+
+  header
+    padding: 2em
+
+  main
+    box-shadow: 3px 3px 16px rgba(0,0,0,.2)
+    margin-top: 5em
