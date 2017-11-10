@@ -1,0 +1,38 @@
+{
+  "name": "calc_etin",
+  "version": "1.1.0",
+  "description": "A Website that calculates your Electronic Taxpayer Identification Number (eTIN).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richie-8DK/calc_eTIN.git"
+  },
+  "keywords": [
+    "magic",
+    "magic-square",
+    "the-morpheus-tool"
+  ],
+  "author": "Richie",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Richie-8DK/calc_eTIN/issues"
+  },
+  "homepage": "https://the-morpheus.de/Tools/eTIN/index.php",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}

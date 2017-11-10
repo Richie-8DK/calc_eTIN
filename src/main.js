@@ -1,3 +1,5 @@
+import './sass/style.sass';
+
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 consonants = "BCDFGHJKLMNPQRSTVXZß"; // alle deutschen Konsonanten
 /**
