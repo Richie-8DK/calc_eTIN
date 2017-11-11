@@ -19,7 +19,7 @@
        designed by <a href="https://the-morpheus.de/forum/member.php?action=profile&uid=371">Agreborig</a></h1>
       <p class="">Diese Website berechnet den eTIN aus Namen und Geburtsdatum. Dabei wird alles lokal brechnet, eure Daten werden an <b>keinen</b> Server weitergeleitet.</p>
     </header>
-    <form>
+    <form id="form">
 
       <div class="f_subname ">
         <label for="lastname">Nachname:</label>
@@ -36,14 +36,13 @@
         <input id="bday" type="date">
       </div>
 
-      <input class="button btn_raised " type="submit" value="eTIN" onclick="calc_eTIN(); return false;">
+      <input id="submit" class="button btn_raised " type="submit" value="eTIN">
       <input class="button btn_flat " type="reset" onclick="document.getElementById('output').innerHTML=''">
 
       <p id="output"></p>
     </form>
   </main>
-    <script src="dist/bundle.js" charset="utf-8"></script>
-
+  <script src="dist/bundle.js" charset="utf-8"></script>
 </body>
 
 </html>
